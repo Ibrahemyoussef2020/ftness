@@ -1,0 +1,104 @@
+  body,
+  *  {
+        box-sizing: border-box;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        font-weight: bold;
+
+      } 
+/*****************************************************************************************/
+
+div{
+  width: clamp(20%, 400px, 90%);
+  margin: 20px auto;
+  padding: 10px;
+  background: #4fb3aa;
+ }
+
+ 
+
+
+ label, button {
+        font-family: "Font Awesome 5 Free";
+        font-size: 25px;
+        font-weight: 900;  
+        color: #1a4ad2; 
+        cursor: pointer;  
+        background: #4fb3aa;
+        outline: none;
+        border: none;
+ }
+ #m{
+  color: green;
+ }
+
+ h3{
+    text-align: center;
+    opacity: .5;
+    color: #201e9c;
+}      
+
+/************************/
+       
+.radio-form {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+ }
+        
+.radio-form > * {
+
+  width: min(15%,50px);
+  font-size: clamp(.8rem, 2.2vw, 1rem);
+  font-weight: bold;
+  color: #1a4ad2;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+
+} 
+
+.radio-form > *:not(:nth-of-type(1)):after {
+            
+   content: "|";
+  position: absolute;
+  top:0;
+  left: -15px;
+
+}
+
+.radio-form > *:nth-of-type(1){
+  padding-left:  7px;
+}
+
+/**************************/
+input:not(input[type = "radio"]),p{
+
+        
+  margin:20px;
+  width: 90%;
+  display: block;
+  background: #a2d2d0;
+  outline: none;
+  border :none;
+}
+
+p{background: inherit;}
+
+input[type = "radio"] { display: none; }
+
+/***************/
+#am {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    display: none;
+}
+
+/********************************************/
+
+#result{text-align: center;}
+#moreI,#art{display: none;}
+#art > * {font-size: clamp(1rem, 1.2vw, 1.2rem);}

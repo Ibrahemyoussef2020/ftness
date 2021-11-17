@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">          
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="fit.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  </head>
+  <body>
+  	<div>
+  		<button id="Reset" onclick="myReset()">&#xf2f9;</button>
+  		<h3>select your ethnic</h3>
+  		<form class= "radio-form">
+  			  		<input  type="radio" id="Asian" name="rad" onclick="myAsianF()">
+		  			<label for="Asian">Asian</label>
+
+		  			<input type="radio" id="Arabien" name="rad"  onclick="myArabienF()">
+		  			<label for="Arabien">Arabien</label>
+      
+		  			<input type="radio"  id="European" name="rad"  onclick="myEuropeanF()">
+		  	     	<label for="European">European</label> 
+
+		  			<input type="radio" id="Nigger" name="rad" onclick="myNiggerF()">
+		  			<label for="Nigger">Nigger</label>
+	  	</form>
+	  	<form id="am">
+			<input type="radio" id="male" name="am"  onclick="myMale()">
+			<label id = "m" for="male">&#xf183;</label>
+			<input type="radio" id="female" name="am" onclick="myFemale()">
+			<label id="f" for="female">&#xf182;</label>
+	  	</form>
+	  	<form id="inp">	  		
+	  		<input type="text" id="age"  placeholder="age"  class="inp">
+	  		<input type="text" id="tall" placeholder="tall"  class="inp">
+	  		<input type="text" id="weight" placeholder="weight" class="inp">
+	  		<input type="button" id="Button" value="enter your information" disabled="disabled" >	  		
+	  	</form>
+	  	<p id="result"></p>
+	  	<input type="button" id="moreI" value="learn more">
+	  	<article id="art">	
+		  		<p id="artK">
+		  		
+		  		</p>
+		  		<p id="artB">
+		  	
+		  		</p>
+		  		<p id="artYM">
+		  		
+		  		</p>
+		  		<p id="artO" >
+		  		if your age from 50 to 70
+		  		should your tall equall 160 or more
+		  		should your weight from 60 to 85 or 80
+		  		</p>
+	  	</article>
+    </div>
+    <script type="text/javascript" src="fit.js"></script>
+  </body>
+  </html>
