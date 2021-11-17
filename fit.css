@@ -8,7 +8,10 @@
 /*****************************************************************************************/
 
 div{
-  width: clamp(20%, 400px, 90%);
+  width: 20%;
+  min-width: 500px;
+  max-width: 90%;
+  min-height: 600px;
   margin: 20px auto;
   padding: 10px;
   background: #4fb3aa;
@@ -49,8 +52,8 @@ div{
         
 .radio-form > * {
 
-  width: min(15%,50px);
-  font-size: clamp(.8rem, 2.2vw, 1rem);
+ /* width: min(15%,50px);*/
+  font-size: clamp(1.2rem, 2.8vw, 1.3rem);
   font-weight: bold;
   color: #1a4ad2;
   text-decoration: underline;
@@ -78,10 +81,12 @@ input:not(input[type = "radio"]),p{
         
   margin:20px;
   width: 90%;
+  padding: 15px;
   display: block;
   background: #a2d2d0;
   outline: none;
-  border :none;
+  border-radius: 20px;
+  border: .5px solid transparent;
 }
 
 p{background: inherit;}
@@ -89,6 +94,17 @@ p{background: inherit;}
 input[type = "radio"] { display: none; }
 
 /***************/
+#inp{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  margin-top: 50px;
+}
+
+
+/*********************/
 #am {
 
     display: flex;
