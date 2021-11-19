@@ -139,11 +139,11 @@ let oldMW = 60;
      	 
      } 
      
-     document.getElementById("moreI").style.display = "block";
+     document.getElementById("moreI").classList.toggle("drop");
    
 	document.getElementById("moreI").onclick = function(){
 
-		document.getElementById("art").style.display = "block";
+		document.getElementById("art").classList.toggle("drop");
 //inner
 		document.getElementById("artK").innerHTML = `
 

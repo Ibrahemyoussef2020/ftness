@@ -17,8 +17,9 @@ section{
 }
 
 div{
-  width: clamp(30% , 600px , 95%);
+  width: clamp(50% , 650px , 95%);
   padding: 10px;
+  margin-top: 50px;
   background: #4fb3aa;
  }
 
@@ -35,6 +36,9 @@ div{
         outline: none;
         border: none;
  }
+
+ label{ font-size:40px}
+ button{margin-top: 50px}
  #m{
   color: green;
  }
@@ -43,6 +47,7 @@ div{
     text-align: center;
     opacity: .5;
     color: #201e9c;
+    margin-top: 0;
 }      
 
 /************************/
@@ -57,23 +62,19 @@ div{
         
 .radio-form > * {
 
- /* width: min(15%,50px);*/
   font-size: clamp(1.2rem, 2.8vw, 1.3rem);
   font-weight: bold;
   color: #1a4ad2;
   text-decoration: underline;
   cursor: pointer;
   position: relative;
-
 } 
 
-.radio-form > *:not(:nth-of-type(1)):after {
-            
+.radio-form > *:not(:nth-of-type(1)):after {          
    content: "|";
   position: absolute;
   top:0;
   left: -15px;
-
 }
 
 .radio-form > *:nth-of-type(1){
@@ -82,9 +83,6 @@ div{
 
 /**************************/
 input:not(input[type = "radio"]),p{
-
-        
-
   width: 90%;
   padding: 15px;
   display: block;
@@ -94,13 +92,12 @@ input:not(input[type = "radio"]),p{
   border: .5px solid transparent;
 }
 
-p{background: inherit;}
+p{background: inherit}
 
 input[type = "radio"] { display: none; }
 
 /***************/
 #inp{
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,7 +109,6 @@ input[type = "radio"] { display: none; }
 
 /*********************/
 #am {
-
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
@@ -126,3 +122,6 @@ input[type = "radio"] { display: none; }
 #art > * {font-size: clamp(1rem, 1.2vw, 1.2rem);}
 
 /**************************************/
+.drop{
+  display: block !important;
+}
