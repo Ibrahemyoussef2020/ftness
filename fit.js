@@ -18,7 +18,6 @@ function myReset() {
    myTall.value = "";
    myWeight.value = "";
    myAge.value ="";
-   more = 0;
 /***************************/
     function myAsianF() {}
 	function myArabienF() {}
@@ -28,9 +27,10 @@ function myReset() {
 	function myMale() {}
 /******************************/
    myAm.style.display = "none";
-   document.getElementById("art").style.display ="none";
-   document.getElementById("moreI").style.display = "none";
+   document.getElementById("art").classList.remove("drop");
+   document.getElementById("moreI").classList.remove("drop");
    myResult.innerHTML = "";
+   myResult.style.display ="none";
 
 }
 
@@ -96,6 +96,8 @@ let oldT = 165;
 let oldW = 50;
 let oldMW = 60;
 /******************************/
+							myResult.style.display ="block";
+
     if(isNaN(myAge.value) || isNaN(myTall.value) || isNaN(myWeight.value)  ){
 
     	myAge.value = `${parseInt(myAge.value)|| "?!"}`;
