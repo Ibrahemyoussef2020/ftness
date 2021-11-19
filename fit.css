@@ -8,10 +8,8 @@
 /*****************************************************************************************/
 
 div{
-  width: 30%;
-  min-width: 500px;
-  min-height: 90vh;
-  margin: 20px auto;
+  width: clamp(30% , 600px , 95%);
+  margin: 40px auto;
   padding: 10px;
   background: #4fb3aa;
  }
@@ -78,7 +76,7 @@ div{
 input:not(input[type = "radio"]),p{
 
         
-  margin:20px;
+  margin:40px 20px;
   width: 90%;
   padding: 15px;
   display: block;
@@ -98,7 +96,6 @@ input[type = "radio"] { display: none; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
   margin-top: 50px;
 }
 
@@ -119,12 +116,11 @@ input[type = "radio"] { display: none; }
 #art > * {font-size: clamp(1rem, 1.2vw, 1.2rem);}
 
 /**************************************/
-
-@media only screen and (max-width: 700px) {
+/*
+@media only screen and (max-width: 900px) {
   
 div {
   width: 95%;
-  min-height: 90vh;
 }
 
-}
+}*/
