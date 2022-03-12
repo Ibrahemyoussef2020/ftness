@@ -1,49 +1,50 @@
   body,
-  *  {
-        box-sizing: border-box;
-        font-size: clamp(1.2rem, 2.7vw, 1.3rem);
-        font-weight: bold;
-
-      } 
+  .under-body,*{
+      box-sizing: border-box;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff ;
+  } 
+  body{
+    overflow-x: hidden;
+  } 
+  ul{
+    list-style: none;
+  }
 /*****************************************************************************************/
-
-section{
- 
-  width: 90vw;
-  max-width: 700px;
-  height: 80vh;
+.under-body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden !important;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 0 auto;
- 
 }
-
-div{
+.under-body div{
   width: 90%;
+  max-width: 90%;
+  min-height: 100%;
   max-width: 900px;
-  padding: 10px;
-  padding-bottom: 70px;
-  margin-top: 50px;
   background: #4fb3aa;
+  background: #000;
+  padding: 20px 20px 40px 20px;
+  margin: 0 auto;
  }
-
- 
-
 
  label, button {
         font-family: "Font Awesome 5 Free";
-        font-size: 25px;
-        font-weight: 900;  
-        color: #1a4ad2; 
+        font-weight: 900;   
         cursor: pointer;  
-        background: #4fb3aa;
         outline: none;
         border: none;
  }
 
- label{ font-size:40px}
- button{margin-top: 50px}
+ #m , #f{
+    font-size: 4rem;
+    margin: 20px 0;
+    color: #1a4ad2;
+ } 
+
  #m{
   color: green;
  }
@@ -51,12 +52,13 @@ div{
  h3{
     text-align: center;
     opacity: .5;
-    color: #201e9c;
     margin-top: 0;
 }      
 
 /************************/
-       
+#Reset{
+  background: transparent;
+}       
 .radio-form {
 
   display: flex;
@@ -66,21 +68,11 @@ div{
  }
         
 .radio-form > * {
-
-  font-size: clamp(1.4rem, 3vw, 1.5rem);
   font-weight: bold;
-  color: #1a4ad2;
   text-decoration: underline;
   cursor: pointer;
   position: relative;
 } 
-
-.radio-form > *:not(:nth-of-type(1)):after {          
-   content: "|";
-  position: absolute;
-  top:0;
-  left: -15px;
-}
 
 .radio-form > *:nth-of-type(1){
   padding-left:  7px;
@@ -96,7 +88,6 @@ input:not(input[type = "radio"]),p{
   outline: none;
   border-radius: 20px;
   border: .5px solid transparent;
-
 }
 
 p{background: inherit}
@@ -109,10 +100,14 @@ input[type = "radio"] { display: none; }
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 400px;
-  margin-top: 50px;
+  height: 70vh;
+  min-height: 500px;
+  margin-top: 100px;
 }
-
+#inp * {
+  padding:20px;
+  border-radius: 30px;
+}
 /*********************/
 #result {display: none;}
 /****************************/
@@ -122,7 +117,9 @@ input[type = "radio"] { display: none; }
     margin: 20px auto;
     display: none;
 }
-
+#Button {
+  color: #000;
+}
 /********************************************/
 
 #result{text-align: center;}
@@ -130,10 +127,21 @@ input[type = "radio"] { display: none; }
 #moreI{
     margin: 10px auto;
 }
-
-#art > * {font-size: clamp(1rem, 1.2vw, 1.2rem);}
-
 /**************************************/
 .drop{
   display: block !important;
+}
+/******************************************/
+
+@media only screen and (min-width: 1020px) {
+  #inp {
+    margin-top: 50px;
+    max-height: 500px;
+  }
+  #inp * {
+    padding:10px;
+    border-radius: 20px;
+  }
+  
+  
 }
