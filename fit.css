@@ -21,7 +21,7 @@
   justify-content: center;
 }
 .under-body div{
-  width: 90%;
+  width: 100%;
   max-width: 90%;
   min-height: 100%;
   max-width: 900px;
@@ -38,23 +38,23 @@
         outline: none;
         border: none;
  }
+ label{
+    margin-bottom: 10px !important
+ }
 
  #m , #f{
     font-size: 4rem;
     margin: 20px 0;
     color: #1a4ad2;
  } 
-
  #m{
   color: green;
  }
-
  h3{
     text-align: center;
     opacity: .5;
     margin-top: 0;
 }      
-
 /************************/
 #Reset{
   background: transparent;
@@ -143,5 +143,14 @@ input[type = "radio"] { display: none; }
     border-radius: 20px;
   }
   
+  
+}
+
+/********************************************/
+@media only screen and (max-width: 700px) {
+  
+  *{
+    font-size: 1.3rem;
+  }
   
 }
