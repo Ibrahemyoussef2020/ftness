@@ -1,3 +1,6 @@
+/*****************************************************/
+/*                 main responsive                   */
+/*****************************************************/
   body,
   .under-body,*{
       box-sizing: border-box;
@@ -11,7 +14,12 @@
   ul{
     list-style: none;
   }
-/*****************************************************************************************/
+  .drop{
+    display: block !important;
+  }  
+/*****************************************************/
+/*           .under-body and main div                */
+/*****************************************************/
 .under-body {
   width: 100%;
   height: 100%;
@@ -22,7 +30,6 @@
 }
 .under-body div{
   width: 100%;
-  max-width: 90%;
   min-height: 100%;
   max-width: 900px;
   background: #4fb3aa;
@@ -30,7 +37,20 @@
   padding: 20px 20px 40px 20px;
   margin: 0 auto;
  }
-
+/*****************************************************/
+/*                reset - h3                         */
+/*****************************************************/
+ h3{
+  text-align: center;
+  opacity: .5;
+  margin-top: 0;
+}
+#Reset{
+background: transparent;
+} 
+/*****************************************************/
+/*                radio-form                         */
+/*****************************************************/
  label, button {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;   
@@ -39,9 +59,19 @@
         border: none;
  }
  label{
-    margin-bottom: 10px !important
- }
+    margin-bottom: 20px !important;
+    margin-right: 7px;
 
+ }
+/*****************************************************/
+/*                am-form                            */
+/*****************************************************/
+#am {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  display: none;
+}
  #m , #f{
     font-size: 4rem;
     margin: 20px 0;
@@ -49,36 +79,25 @@
  } 
  #m{
   color: green;
- }
- h3{
-    text-align: center;
-    opacity: .5;
-    margin-top: 0;
-}      
-/************************/
-#Reset{
-  background: transparent;
-}       
+ }      
 .radio-form {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
- }
-        
+ }      
 .radio-form > * {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
   position: relative;
 } 
-
 .radio-form > *:nth-of-type(1){
   padding-left:  7px;
 }
-
-/**************************/
+input[type = "radio"] { display: none; }
+/*****************************************************/
+/*                inp and p                          */
+/*****************************************************/
 input:not(input[type = "radio"]),p{
   width: 90%;
   padding: 15px;
@@ -89,12 +108,6 @@ input:not(input[type = "radio"]),p{
   border-radius: 20px;
   border: .5px solid transparent;
 }
-
-p{background: inherit}
-
-input[type = "radio"] { display: none; }
-
-/***************/
 #inp{
   display: flex;
   flex-direction: column;
@@ -108,31 +121,29 @@ input[type = "radio"] { display: none; }
   padding:20px;
   border-radius: 30px;
 }
-/*********************/
-#result {display: none;}
-/****************************/
-#am {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-    display: none;
+/*****************************************************/
+/*               contiue p                           */       */
+/*****************************************************/
+p{
+  background: inherit
+}
+#result {
+  display: none;
+  text-align: center;
+}
+
+#moreI,#art{
+  display: none;
+}
+#moreI{
+    margin: 10px auto;
 }
 #Button {
   color: #000;
 }
-/********************************************/
-
-#result{text-align: center;}
-#moreI,#art{display: none;}
-#moreI{
-    margin: 10px auto;
-}
-/**************************************/
-.drop{
-  display: block !important;
-}
-/******************************************/
-
+/*****************************************************/
+/*                media query                        */                                   
+/*****************************************************/
 @media only screen and (min-width: 1020px) {
   #inp {
     margin-top: 50px;
@@ -142,15 +153,12 @@ input[type = "radio"] { display: none; }
     padding:10px;
     border-radius: 20px;
   }
-  
-  
 }
-
-/********************************************/
+/***********************/
 @media only screen and (max-width: 700px) {
-  
   *{
     font-size: 1.3rem;
   }
   
 }
+/**************************************************/
