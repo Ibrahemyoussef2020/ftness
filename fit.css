@@ -43,7 +43,7 @@
  h3{
   text-align: center;
   opacity: .5;
-  margin-top: 0;
+  margin: 10px auto;
 }
 #Reset{
 background: transparent;
@@ -51,6 +51,23 @@ background: transparent;
 /*****************************************************/
 /*                radio-form                         */
 /*****************************************************/
+.radio-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+ }      
+.radio-form > * {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+} 
+.radio-form > *:nth-of-type(1){
+  padding-left:  7px;
+}
+input[type = "radio"] { display: none; }
  label, button {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;   
@@ -82,26 +99,11 @@ background: transparent;
  #m{
   color: green;
  }      
-.radio-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
- }      
-.radio-form > * {
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-  position: relative;
-} 
-.radio-form > *:nth-of-type(1){
-  padding-left:  7px;
-}
-input[type = "radio"] { display: none; }
 /*****************************************************/
 /*                inp and p                          */
 /*****************************************************/
 input:not(input[type = "radio"]),p{
-  width: 90%;
+  width: 98%;
   padding: 15px;
   font-size: clamp(1.4rem, 3vw, 1.5rem);
   display: block;
@@ -119,10 +121,10 @@ input:not(input[type = "radio"]){
   align-items: center;
   height: 70vh;
   min-height: 500px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #inp * {
-  border-radius: 30px;
+  border-radius: 40px;
   color: #000 !important;
   font-size: 1.7rem;
 }
@@ -152,12 +154,10 @@ p , #result {
 /*****************************************************/
 @media only screen and (min-width: 1020px) {
   #inp {
-    margin-top: 50px;
     max-height: 500px;
   }
   #inp * {
     padding:20px;
-    border-radius: 30px;
     font-size: 1.7rem;
   }
 }
