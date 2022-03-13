@@ -59,9 +59,11 @@ background: transparent;
         border: none;
  }
  label{
-    margin-bottom: 20px !important;
-    margin-right: 7px;
-
+    margin-bottom: 30px !important;
+    margin-right: 8px;
+ }
+ label:last-child{
+  margin-bottom: 0px !important;
  }
 /*****************************************************/
 /*                am-form                            */
@@ -74,7 +76,7 @@ background: transparent;
 }
  #m , #f{
     font-size: 4rem;
-    margin: 20px 0;
+    margin:0;
     color: #1a4ad2;
  } 
  #m{
@@ -103,10 +105,12 @@ input:not(input[type = "radio"]),p{
   padding: 15px;
   font-size: clamp(1.4rem, 3vw, 1.5rem);
   display: block;
-  background: #a2d2d0;
   outline: none;
   border-radius: 20px;
   border: .5px solid transparent;
+}
+input:not(input[type = "radio"]){
+  background: #a2d2d0;
 }
 #inp{
   display: flex;
@@ -118,14 +122,16 @@ input:not(input[type = "radio"]),p{
   margin-top: 100px;
 }
 #inp * {
-  padding:20px;
   border-radius: 30px;
+  color: #000 !important;
+  font-size: 1.7rem;
 }
 /*****************************************************/
 /*               contiue p                           */       */
 /*****************************************************/
-p{
-  background: inherit
+p , #result {
+  background: transparent !important;
+  color: #fff;
 }
 #result {
   display: none;
@@ -150,8 +156,9 @@ p{
     max-height: 500px;
   }
   #inp * {
-    padding:10px;
-    border-radius: 20px;
+    padding:20px;
+    border-radius: 30px;
+    font-size: 1.7rem;
   }
 }
 /***********************/
@@ -159,6 +166,8 @@ p{
   *{
     font-size: 1.3rem;
   }
-  
+  #inp *{
+    font-size: 1.7rem;
+  }
 }
 /**************************************************/
